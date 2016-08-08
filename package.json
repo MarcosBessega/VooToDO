@@ -1,10 +1,9 @@
 {
   "name": "VooToDo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Una Description",
   "main": "index.js",
   "scripts": {
-    "prestart:production" : "npm install",
     "start:production": "node Server/index --harmony"
   },
   "repository": {
