@@ -1,3 +1,5 @@
+'use strict'
+
 const parse = require('co-body'),
 	User = require('../../Models/User');
 

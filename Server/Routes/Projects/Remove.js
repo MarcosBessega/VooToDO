@@ -1,3 +1,5 @@
+'use strict'
+
 const Project = require('../../Models/Project');
 
 const Remove = function * (next) {

@@ -1,3 +1,5 @@
+'use strict'
+
 const Type = require('../../Models/Type');
 
 const Find = function * (next) {

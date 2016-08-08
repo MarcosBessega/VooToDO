@@ -1,3 +1,5 @@
+'use strict'
+
 const Todo = require('../../Models/Todo');
 
 const Get = function * (next) {

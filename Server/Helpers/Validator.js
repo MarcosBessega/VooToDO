@@ -1,3 +1,5 @@
+'use strict'
+
 var thunkify = require('thunkify-mongoose-model')
 
 const validator = {

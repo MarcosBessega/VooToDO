@@ -1,3 +1,5 @@
+'use strict'
+
 var logger = require('koa-logger'),
 	statelessauth = require('./koa-statelessauth'),
 	validator = require('./Helpers/Validator'),

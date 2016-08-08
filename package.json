@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prestart:production" : "npm install",
+    "prestart:production" : "cd server && npm install",
     "start:production": "export ENV='production' && node Server/index --harmony"
   },
   "repository": {
@@ -12,8 +12,8 @@
     "url": "git+https://github.com/MarcosBessega/vootodo.git"
   },
   "engines": {
-  "node": ">=0.10.25"
-},
+    "node": ">=6.2.1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

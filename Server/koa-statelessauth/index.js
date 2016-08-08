@@ -1,3 +1,5 @@
+'use strict'
+
 var minimatch = require('minimatch');
 
 module.exports = statelessauth;

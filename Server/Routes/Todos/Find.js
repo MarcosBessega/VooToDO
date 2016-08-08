@@ -1,3 +1,5 @@
+'use strict'
+
 const thunkify = require('thunkify-mongoose-model'),
 Todo = require('../../Models/Todo');
 

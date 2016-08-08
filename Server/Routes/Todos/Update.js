@@ -1,3 +1,5 @@
+'use strict'
+
 const parse = require('co-body'),
 	Todo = require('../../Models/Todo');
 

@@ -1,3 +1,5 @@
+'use strict'
+
 const parse = require('co-body'),
 	randomToken = require('random-token'),
 	Project = require('../../Models/Project');

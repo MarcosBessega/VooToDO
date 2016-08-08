@@ -1,3 +1,5 @@
+'use strict'
+
 const User = require('../../Models/User');
 
 const Remove = function * (next) {

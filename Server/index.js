@@ -1,3 +1,5 @@
+'use strict'
+
 var koa = require('koa'),
 	conf = require('./env'),
 	connect = require('./mongo'),
