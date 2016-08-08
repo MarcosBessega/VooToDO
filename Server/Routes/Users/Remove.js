@@ -1,10 +1,14 @@
-const test = function * (next) {
- var data = {
-   'title': 'Koa test application',
-   'body': 'Hello World!'
- };
+const User = require('../../Models/User');
 
- this.body = data;
+const Remove = function * (next) {
+	try {
+		let result = yield User.remove({_id: this.params.id}).exec();
+		return this.body = result;
+  } catch (_error) {
+		let error = _error;
+		return this.body = error;
+	}
+
 }
 
-module.exports = test
+module.exports = Remove

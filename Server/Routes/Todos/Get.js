@@ -1,10 +1,10 @@
-const test = function * (next) {
- var data = {
-   'title': 'Koa test application',
-   'body': 'Hello World!'
- };
+const Todo = require('../../Models/Todo');
 
- this.body = data;
+const Get = function * (next) {
+
+  var AllTodos = yield Todo.find({}).exec();
+
+	this.body = AllTodos;
 }
 
-module.exports = test
+module.exports = Get

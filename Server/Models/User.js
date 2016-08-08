@@ -1,11 +1,21 @@
-var mongoose = require('mongoose')
+var mongoose = require('mongoose');
 
 var UserSchema = mongoose.Schema({
-   name: String,
-   email: { type: String, required: true, unique: true },
-   password: { type: String, required: true },
-   token: { type: String, required: true, unique: true },
-   projects:  [{type: mongoose.Schema.ObjectId, ref: 'Project'}]
+	name: String,
+	email: {
+		type: String,
+		required: true,
+		unique: true
+	},
+	password: {
+		type: String,
+		required: true
+	},
+	token: {
+		type: String,
+		required: true,
+		unique: true
+	}
 });
 
 UserSchema.plugin(autoIncrement.plugin, 'User');

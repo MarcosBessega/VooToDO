@@ -1,0 +1,23 @@
+{
+  "name": "VooToDo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node Server/index --harmony"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcosBessega/vootodo.git"
+  },
+  "engines": {
+  "node": ">=0.10.25"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcosBessega/vootodo/issues"
+  },
+  "homepage": "https://github.com/MarcosBessega/vootodo#readme"
+}

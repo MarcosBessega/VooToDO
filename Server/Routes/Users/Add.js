@@ -6,10 +6,15 @@ const Add = function * (next) {
 	var data = yield parse.json(this);
 	data.token = randomToken(24)
 
-  let newUser = new User(data);
-  newUser.save();
+	try {
+		let result = yield User.create(data);
+		this.status = 201;
+		return this.body = result;
+	} catch (_error) {
+		error = _error;
+		return this.body = error;
+	}
 
-	this.body = newUser;
 }
 
 module.exports = Add

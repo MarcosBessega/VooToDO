@@ -1,10 +1,13 @@
-const test = function * (next) {
- var data = {
-   'title': 'Koa test application',
-   'body': 'Hello World!'
- };
+const thunkify = require('thunkify-mongoose-model'),
+Project = require('../../Models/Project');
 
- this.body = data;
+const Find = thunkify(Project, 'find');
+
+const Get = function * (next) {
+
+  var AllProjects = yield Find({});
+
+	this.body = AllProjects;
 }
 
-module.exports = test
+module.exports = Get

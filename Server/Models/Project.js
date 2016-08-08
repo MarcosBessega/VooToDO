@@ -3,8 +3,7 @@ var mongoose = require('mongoose');
 var ProjectSchema = mongoose.Schema({
    name:  { type: String, required: true, unique: true },
    description: { type: String, required: true },
-   todos:  [{type: mongoose.Schema.ObjectId, ref: 'Todo'}],
-   user: {type: mongoose.Schema.ObjectId, ref: 'User'}
+   user: {type: Number, ref: 'User'}
 });
 
 ProjectSchema.plugin(autoIncrement.plugin, 'Project');

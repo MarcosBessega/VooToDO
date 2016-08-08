@@ -1,10 +1,17 @@
-const test = function * (next) {
- var data = {
-   'title': 'Koa test application',
-   'body': 'Hello World!'
- };
+const thunkify = require('thunkify-mongoose-model'),
+User = require('../../Models/User');
 
- this.body = data;
+const Find = thunkify(User, 'find');
+
+const FindUser = function * (next) {
+
+  try {
+    let user = yield User.findById(this.params.id).exec()
+    this.body = user
+  }catch(err) {
+    this.body = err
+  }
+
 }
 
-module.exports = test
+module.exports = FindUser

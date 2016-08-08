@@ -26,6 +26,7 @@
     "koa-static": "^2.0.0",
     "mongoose": "^4.5.8",
     "mongoose-auto-increment": "^5.0.1",
+    "mongoose-autopopulate": "^0.4.0",
     "random-token": "0.0.8",
     "thunkify-mongoose-model": "0.0.1"
   }

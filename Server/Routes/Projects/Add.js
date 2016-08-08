@@ -1,10 +1,19 @@
-const test = function * (next) {
- var data = {
-   'title': 'Koa test application',
-   'body': 'Hello World!'
- };
+const parse = require('co-body'),
+	randomToken = require('random-token'),
+	Project = require('../../Models/Project');
 
- this.body = data;
+const Add = function * (next) {
+	var data = yield parse.json(this);
+
+	try {
+		let result = yield Project.create(data);
+		this.status = 201;
+		return this.body = result;
+	} catch (_error) {
+		error = _error;
+		return this.body = error;
+	}
+
 }
 
-module.exports = test
+module.exports = Add
