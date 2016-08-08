@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prestart:production" : "npm install",
-    "start:production": "export ENV='production' && node Server/index --harmony"
+    "start:production": "node Server/index --harmony"
   },
   "repository": {
     "type": "git",
