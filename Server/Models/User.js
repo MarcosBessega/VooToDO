@@ -1,4 +1,5 @@
-var mongoose = require('mongoose');
+var mongoose = require('mongoose'),
+autoIncrement = require('mongoose-auto-increment');
 
 var UserSchema = mongoose.Schema({
 	name: String,

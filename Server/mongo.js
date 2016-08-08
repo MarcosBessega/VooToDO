@@ -1,6 +1,6 @@
 'use strict'
 
-var fs = require('fs')
+var fs = require('fs'),
 	mongoose = require('mongoose'),
 	autoIncrement = require('mongoose-auto-increment');
 

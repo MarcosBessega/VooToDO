@@ -1,4 +1,5 @@
-var mongoose = require('mongoose');
+var mongoose = require('mongoose'),
+autoIncrement = require('mongoose-auto-increment');
 
 var TypeSchema = mongoose.Schema({
    name:  { type: String, required: true, unique: true },

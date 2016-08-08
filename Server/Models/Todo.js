@@ -1,5 +1,6 @@
 var mongoose = require('mongoose'),
-	autoPopulate = require('mongoose-autopopulate');
+	autoPopulate = require('mongoose-autopopulate'),
+	autoIncrement = require('mongoose-auto-increment');
 
 var TodoSchema = mongoose.Schema({
    name: String,
