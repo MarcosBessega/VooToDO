@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prestart:production" : "npm install",
     "start:production": "node Server/index --harmony"
   },
   "repository": {
