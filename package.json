@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prestart:production" : "cd server && npm install",
+    "prestart:production" : "npm install",
     "start:production": "export ENV='production' && node Server/index --harmony"
   },
   "repository": {
@@ -17,6 +17,20 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "co-body": "^4.2.0",
+    "koa": "^1.2.1",
+    "koa-basic-auth": "^1.1.2",
+    "koa-jwt": "^1.2.0",
+    "koa-logger": "^1.3.0",
+    "koa-router": "^5.4.0",
+    "koa-static": "^2.0.0",
+    "mongoose": "^4.5.8",
+    "mongoose-auto-increment": "^5.0.1",
+    "mongoose-autopopulate": "^0.4.0",
+    "random-token": "0.0.8",
+    "thunkify-mongoose-model": "0.0.1"
+  },
   "bugs": {
     "url": "https://github.com/MarcosBessega/vootodo/issues"
   },
