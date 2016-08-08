@@ -1,11 +1,12 @@
 'use strict'
 
+let config;
 if(process.env.ENV === 'production') {
-  let config = {
+  config = {
     mongoUri: 'mongodb://root:root@ds145315.mlab.com:45315/vootodo'
   }
 }else{
-  let config = {
+  config = {
     mongoUri: 'mongodb://localhost/vootodo'
   }
 }
