@@ -31,8 +31,8 @@
   "dependencies": {
     "material-ui": "^0.15.3",
     "normalizr": "^2.2.1",
-    "react": "^0.14.6",
-    "react-dom": "^0.14.6",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
     "react-redux": "^4.4.5",
     "react-router": "^2.6.1",
     "react-router-redux": "^4.0.5",

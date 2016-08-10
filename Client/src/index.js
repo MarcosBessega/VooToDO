@@ -6,7 +6,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 import './assets.js'
 
 // Needed for onTouchTap
-// injectTapEventPlugin();
+injectTapEventPlugin();
 
 const store = configureStore()
 
